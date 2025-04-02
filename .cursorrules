@@ -1,0 +1,159 @@
+# 🚀 Cursor AI Rules & Guidelines
+
+## **0️⃣ First Priority - Read Rules**
+- Cursor **must read and follow** these rules **before proceeding** with any prompt.
+- Every interaction **must start** with reviewing these guidelines.
+- No action should be taken without **first understanding** all applicable rules.
+
+## **1️⃣ No Automatic Changes**
+- Cursor **must not modify any code** without first asking for permission.
+- Before making any changes, Cursor must:
+  - Explain **what it is going to do**.
+  - Explain **which files and parts of the code will be affected**.
+  - Provide **alternative solutions** (if available).
+  - Confirm if **my approach is better** before proceeding.
+
+## **2️⃣ Track & Avoid Mistakes**
+- If Cursor **makes a mistake**, it must **log the mistake** in this file.
+- Cursor must **not repeat the same mistake** in future tasks.
+
+## **2️⃣.5️⃣ Suggest Better Alternatives**
+- Cursor must **research and suggest** alternative solutions that might be better than what is requested
+- Before implementing any solution, Cursor must:
+  - Explain why the alternative might be better
+  - Provide examples or references of successful implementations
+  - List pros and cons of each approach
+  - Let the user decide which approach to use
+- This applies to:
+  - Technology choices
+  - Design patterns
+  - Implementation methods
+  - File structures
+  - Code organization
+
+## **3️⃣ Preserve Core Project Requirements**
+- Cursor **must not forget** the project's **core rules and architecture**.
+- It must **ensure consistency** in project structure, file organization, and component reusability.
+
+## **4️⃣ Ask Before Assuming**
+- Cursor **must not make assumptions** about missing details.
+- If something is unclear, Cursor must **ask for clarification** before implementing.
+- **No hallucinations**—only implement what has been clearly defined.
+
+## **5️⃣ Do Not Modify More Than Requested**
+- Cursor should **only make the exact changes requested**.
+- No additional modifications unless **explicitly approved**.
+
+## **6️⃣ I Am the Master**
+- Cursor **must ask for approval before executing code**.
+- Cursor should **not take actions on its own**.
+- Cursor will only **write code after I confirm it**.
+
+## **7️⃣ Additional Best Practices**
+- Cursor must follow **best practices for simplicity & maintainability**.
+- If there is a **better way** to implement something, it must **explain it before making changes**.
+- If there are **potential issues**, Cursor must **warn me before implementing**.
+
+## **8️⃣ Important Project Features & Notes**
+- Cursor must **maintain a list** of crucial project features and components that **must not be modified**.
+- Before making any changes, Cursor must:
+  - **Double-check** if the changes affect any features listed in this section
+  - **Ask for explicit confirmation** if changes might impact these features
+  - **Document any new important features** that should be added to this list
+- This section will be updated as new critical features are identified
+
+### Project Structure
+```
+/project-root
+│── /public          # Non-logged user accessible files
+│   │── index.html   # Main entry point for non-logged users
+│   │── /components
+│   │── /styles
+│   │── /js
+│   │── /assets
+│── /private         # Logged user accessible files
+│   │── dashboard.html  # Main entry point for logged users
+│   │── /components
+│   │── /styles
+│   │── /js
+│   │── /assets
+│── /backend         # Node.js + Express API files
+│── /uploads         # PDF files (homework, notes)
+```
+
+### Critical Features (Do Not Modify Without Explicit Permission)
+1. **Public Section**
+   - `index.html` is the main entry point for non-logged users
+   - All public pages must be accessible without authentication
+   - Public assets and components must remain in the public directory
+   - Logo styling must be consistent across all components:
+     - HTML: Use `&nbsp;` between "Quantum" and "Learners"
+     - CSS: Use `margin-right: 0.2rem` and `letter-spacing: 0.5px`
+     - Colors: Primary (#02a1d1) for "Quantum", appropriate contrast for "Learners"
+     - Font: Poppins, 700 weight, size varies by component (navbar: 1.8rem, footer: 1.5rem)
+
+2. **Private Section**
+   - `dashboard.html` is the main entry point for logged users
+   - All private pages require authentication
+   - Private assets and components must remain in the private directory
+
+3. **Backend Structure**
+   - Node.js + Express API architecture
+   - API endpoints must follow RESTful conventions
+   - Authentication middleware must be properly implemented
+
+4. **Uploads Directory**
+   - Reserved for PDF files (homework, notes)
+   - Must maintain proper file organization
+   - Access control must be implemented
+
+### Technology Stack
+- Frontend: HTML, CSS, JavaScript
+- Backend: Node.js, Express.js
+- File Storage: Local file system (uploads directory)
+
+---
+## **🛑 Mistakes Log (Do Not Repeat)**
+1. **Mistake: Jumping straight into coding without proper consultation**
+   - Date: [Current Date]
+   - Issue: Started implementing code without first:
+     - Reading and understanding the CURSOR_RULES.md file
+     - Asking clarifying questions about requirements
+     - Getting specific details about the implementation
+     - Discussing the approach with the user
+   - Impact: Created unnecessary code that might not match user requirements
+   - Prevention: Always follow these steps:
+     1. Read and understand CURSOR_RULES.md first
+     2. Ask clarifying questions about requirements
+     3. Get specific details about implementation
+     4. Discuss approach with user
+     5. Only proceed with coding after getting approval
+
+2. **Mistake: Not following proper file cleanup process**
+   - Date: [Current Date]
+   - Issue: Created new component structure without:
+     - First checking for redundant files and directories
+     - Not marking the cleanup process in CURSOR_RULES.md
+     - Not following the proper process of documenting changes
+   - Impact: Created confusion with duplicate files and directories
+   - Prevention: Always follow these steps:
+     1. Read and understand CURSOR_RULES.md first
+     2. Check for existing files and directories
+     3. Document any cleanup needed
+     4. Get approval for cleanup
+     5. Execute cleanup and verify
+     6. Mark the process in CURSOR_RULES.md
+
+3. **Mistake: Not reviewing CURSOR_RULES.md before each prompt**
+   - Date: [Current Date]
+   - Issue: Started working on tasks without first reviewing CURSOR_RULES.md
+   - Impact: 
+     - Missed important guidelines and requirements
+     - Made changes without proper context
+     - Risked inconsistency with project standards
+   - Prevention: Always follow these steps:
+     1. Read CURSOR_RULES.md completely before starting any task
+     2. Pay special attention to Critical Features section
+     3. Review relevant mistakes in Mistakes Log
+     4. Ensure all guidelines are followed before proceeding
+     5. Double-check if any changes affect documented features 
