@@ -156,4 +156,23 @@
      2. Pay special attention to Critical Features section
      3. Review relevant mistakes in Mistakes Log
      4. Ensure all guidelines are followed before proceeding
-     5. Double-check if any changes affect documented features 
+     5. Double-check if any changes affect documented features
+
+4. **Mistake: Making assumptions about visual issues without proper investigation**
+   - Date: [Current Date]
+   - Issue: Attempted to fix visual spacing issues without:
+     - First checking the rendered page to identify exact issue location
+     - Systematically reviewing relevant CSS files
+     - Finding the explicit cause before making changes
+     - Making targeted fixes instead of multiple indirect attempts
+   - Impact:
+     - Wasted time with ineffective solutions
+     - Made unnecessary changes to unrelated code
+     - Created potential new issues while fixing the wrong things
+   - Prevention: Always follow these steps:
+     1. Check the rendered page first to identify exact issue location
+     2. Systematically review all relevant CSS/HTML files
+     3. Find the explicit cause of the issue
+     4. Make precise, targeted fixes
+     5. Verify the fix works without causing new issues
+     6. Document the correct solution for future reference 

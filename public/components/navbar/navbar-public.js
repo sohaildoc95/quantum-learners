@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbarHTML = `
         <nav class="navbar">
             <div class="navbar-brand">
-                <a href="/" class="logo">
+                <a href="index.html" class="logo">
                     <span class="quantum">Quantum</span>
                     <span class="learners">&nbsp;Learners</span>
                 </a>
@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <div class="navbar-menu" id="navbarMenu">
                 <ul class="nav-links">
-                    <li><a href="/" class="nav-link">Home</a></li>
-                    <li><a href="/services" class="nav-link">Services</a></li>
-                    <li><a href="/about" class="nav-link">About</a></li>
-                    <li><a href="/contact" class="nav-link">Contact Us</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
                     <li class="nav-buttons">
                         <a href="/login" class="nav-link login-btn">Login</a>
                         <a href="/free-test" class="nav-link free-test-btn">Free Test</a>
